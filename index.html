@@ -14,38 +14,50 @@
     <div class="container">
         <header>
             <!-- Navigation -->
-            <img src="img/logo.svg" alt="logo" id="logo">
-            <nav>
-                <label>
-                    <span class="hmic">
-                        MENU<i class="im im-menu"></i>
-                    </span>
-                    <input type="checkbox" class="menu-trigger">
-                    
-                    <ul class="main-menu">
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">About/Contact</a></li>
-                        <li><a href="#">Behance</a></li>
-                    </ul>
-                </label>
-            </nav>
-        </header>
-        <!--Banner-->
-        <div class="banner">
-            <div class="row">
-                <div class="col">
-                    <h5>LY LE</h5>
-                    <h1>Interactive media and UX/UI designer</h1>
-                    <p>I'm based in Ottawa, and this is my virtual portfolio.</p>
-                    <button><a href="#">View my Works</a></button>
-                    <p>or</p>
-                    <button><a href="#">Read about me</a></button>
+            <div class="brand">
+                <img src="img/logo.svg" alt="logo" id="logo">
+                <nav>
+                    <label>
+                        <span class="hmic">
+                            <i class="im im-menu"></i>
+                        </span>
+                        <input type="checkbox" class="menu-trigger">
+                        
+                        <ul class="main-menu">
+                            <li><a href="#">Works</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Behance</a></li>
+                        </ul>
+                    </label>
+                </nav>
+            </div>
+            <div class="banner">
+                <div class="row">
+                    <div class="col">
+                        <h5>LY LE</h5>
+                        <h1>Interactive media and UX/UI designer</h1>
+                        <p>I'm based in Ottawa, and this is my virtual portfolio.</p>
+                        <div class="banner-link">
+                            <button><a href="#">View my Works</a></button>
+                            or
+                            <button><a href="#">Read about me</a></button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/index/imgbanner.jpg" id="banner-img">
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="img/index/imgbanner.png" id="banner-img">
+                <div class="col social">
+                    <i class="im im-instagram"></i>
+                    <i class="im im-behance"></i>
+                    <i class="im im-linkedin"></i>
                 </div>
             </div>
-        </div>
+            
+        </header>
+        <!--Banner-->
+        
         
         <div class="wrapper">
             <section>
@@ -59,12 +71,55 @@
 
                         <div class="caption">
                             <h3>Project's Name</h3>
-                            <p>Description</p>
+                            <h5>Description</h5>
                         </div>
                     </div>
-                    
+                
+                
+                    <div class="card">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/550x700" media="(min-width: 768px)">
+                            <img src="https://via.placeholder.com/500x650" alt="..">
+                        </picture>
+
+                        <div class="caption">
+                            <h3>Project's Name</h3>
+                            <h5>Description</h5>
+                        </div>
+                    </div>
+                </div>
             </section>
-            
+            <section>
+                <h2>Personal Projects</h2>
+                <div class="projects">
+                    <div class="card">
+                        <a href="https://facebook.com">
+                            <picture>
+                                <source srcset="https://via.placeholder.com/550x700" media="(min-width: 768px)">
+                                <img src="https://via.placeholder.com/500x650" alt="..">
+                            </picture>
+
+                            <div class="caption">
+                                <h3>Project's Name</h3>
+                                <h5>Description</h5>
+                            </div>
+                        </a>
+                    </div>
+                
+                
+                    <div class="card">
+                        <picture>
+                            <source srcset="https://via.placeholder.com/550x700" media="(min-width: 768px)">
+                            <img src="https://via.placeholder.com/500x650" alt="..">
+                        </picture>
+
+                        <div class="caption">
+                            <h3>Project's Name</h3>
+                            <h5>Description</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
 
             <section>
@@ -74,6 +129,9 @@
             </section>
         </div>
 
+        <footer>
+            <h5>LY LE</h5>
+        </footer>
 
     </div>
 

@@ -5,20 +5,55 @@ body {
     background-color:#050606;
     color:#F5F5F5;
     font-family:Poppins, sans-serif;
+    height:100vh;
+    cursor: url('../img/hover.gif'), auto;
+
+}
+/**************************
+********TYPHOGRAPHY********
+**************************/
+
+h5 {
+    letter-spacing:.3em;
+    font-weight: 300;
 }
 
+/* Buttons */
+button {
+    background-color:#050606;
+    padding:.2em 1em;
+    border:none;
+    border-bottom:solid 3px #F5F5F5;
+}
+button a{
+    text-decoration:none;
+    color:#F5F5F5;
+}
+
+button:hover {
+    border-bottom:solid 5px #F3B91C;
+    font-weight:600;
+    transition: .2s;
+    
+}
+
+
+/**************************
+********LAYOUT********
+**************************/
 .container {
     width:90%;
     margin:auto;
+    
 }
+.container img {
+    width:100%;
+    
+}
+
 /**************************
 ********NAVIGATION********
 **************************/
-
-#logo {
-    width:60px;
-    height:auto;
-}
 
 nav ul {
     list-style-type:none;
@@ -47,6 +82,29 @@ nav ul a:focus {
     letter-spacing:0.25em;
     transition:0.2s;
 }
+/**************************
+**********BANNER**********
+**************************/
+
+header {
+    height:100vh;
+    
+}
+
+.brand {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+nav span i {
+    margin-right:.5em;
+}
+#logo {
+    width:60px;
+    height:auto;
+}
 
 /**************************
 ********IMAGE CARD********
@@ -55,6 +113,7 @@ nav ul a:focus {
     position:relative;
     transition: opacity 0.3s, transform .5s 1s;
 }
+
 .card img {
     opacity:1;
     width:100%;
@@ -65,17 +124,11 @@ nav ul a:focus {
     bottom:30px;
     left:30px;
 
-    display:none
+    color:#050606;
 }
 
-.card:hover img {
-    opacity:0.6;
-}
-.card:hover .caption {
-    display:block;
-    animation: slide-up .5s ease-in-out .2s 1 forwards;
-    opacity:0;
-}
+
+
 @keyframes slide-up {
     0% {
       bottom: 0;
@@ -102,6 +155,30 @@ nav ul a:focus {
     }
     nav ul li:last-child {
         margin-right:0;
+    }
+
+    .projects {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-gap:1em;
+        
+    }
+    
+    
+}
+
+@media (min-width:1200px) {
+    .caption {
+        display:none;
+        color:#F5F5F5;
+    }
+    .card:hover img {
+        opacity:0.6;
+    }
+    .card:hover .caption {
+        display:block;
+        animation: slide-up .5s ease-in-out .2s 1 forwards;
+        opacity:0;
     }
 }
 
