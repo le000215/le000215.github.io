@@ -5,19 +5,27 @@ body {
     background-color:#050606;
     color:#F5F5F5;
     font-family:Poppins, sans-serif;
-    height:100vh;
-    cursor: url('../img/hover.gif'), auto;
-
+    
+    
 }
 /**************************
 ********TYPHOGRAPHY********
 **************************/
-
+h2 {
+    margin-bottom:2em;
+}
+h4 {
+    line-height:2em;
+    font-weight:400;
+    letter-spacing:.15em;
+}
 h5 {
     letter-spacing:.3em;
     font-weight: 300;
 }
-
+p {
+    line-height:1.5em;
+}
 /* Buttons */
 button {
     background-color:#050606;
@@ -36,21 +44,77 @@ button:hover {
     transition: .2s;
     
 }
+#button-contact {
+    font-size:1.75em;
+}
 
-
+#button-contact i {
+    margin-left:.5em;
+    animation:touch 1.5s  .2s infinite ;
+    
+   
+}
+@keyframes touch {
+    0% {
+        transform-origin:5px;
+    }
+    50% {
+        transform:translateX(10px);
+    }
+}
 /**************************
 ********LAYOUT********
 **************************/
 .container {
     width:90%;
     margin:auto;
+    display:grid;
+    position:relative
     
 }
 .container img {
     width:100%;
     
 }
+section:nth-child(3) {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
+    
+}
+
+/* Footer */
+footer {
+    margin-top:3em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-top:solid 1px #f5f5f57c;
+}
+
+
+
+.go-top{
+    position: fixed;
+    bottom:2em;
+    right:1em;
+    text-decoration: none;
+    color:inherit;
+    background-color: #050606be;
+    padding:1em;
+    width:1.2em;
+    height:1.4em;
+    
+    
+}
+*/
+footer p {
+    font-weight:300;
+}
 /**************************
 ********NAVIGATION********
 **************************/
@@ -98,20 +162,61 @@ header {
     align-items: center;
    
 }
-nav span i {
-    margin-right:.5em;
-}
+
 #logo {
     width:60px;
     height:auto;
 }
+.banner {
+    display:grid;
+    grid-template-columns:100%;
+    grid-gap:.5em;
+}
+.banner-link {
+    display:inline-block
+}
+.row {
+    display:grid;
+    grid-gap:.3em;
+}
+.col {
+   display:grid;
+   margin-top:2em;
+}
 
+.social {
+    margin-top:1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.scroll {
+    margin-top:1em;
+    animation:scroll 1.5s  .2s infinite ;
+    display:flex;
+    justify-content: center;
+   
+}
+@keyframes scroll {
+    0% {
+        transform-origin:3px;
+    }
+    50% {
+        transform:translateY(5px);
+    }
+}
 /**************************
 ********IMAGE CARD********
 **************************/
+
 .card {
     position:relative;
     transition: opacity 0.3s, transform .5s 1s;
+    
+} 
+.card a:hover {
+    cursor: url('../img/hover.gif'), pointer;
+
 }
 
 .card img {
@@ -121,24 +226,20 @@ nav span i {
 
 .caption {
     position:absolute;
-    bottom:30px;
-    left:30px;
+    top:20px;
+    left:40px;
 
-    color:#050606;
+    color:#F5F5F5;
+}
+.projects {
+    margin-bottom:3em;
 }
 
 
 
-@keyframes slide-up {
-    0% {
-      bottom: 0;
-      opacity: 0;
-    }
-    100% {
-      bottom: 15%;
-      opacity: 1;
-    }
-}
+
+
+
 @media (min-width:768px) {
    .hmic {
        display:none;
@@ -179,6 +280,17 @@ nav span i {
         display:block;
         animation: slide-up .5s ease-in-out .2s 1 forwards;
         opacity:0;
+    }
+
+    @keyframes slide-up {
+        0% {
+          bottom: 0;
+          opacity: 0;
+        }
+        100% {
+          bottom: 15%;
+          opacity: 1;
+        }
     }
 }
 
