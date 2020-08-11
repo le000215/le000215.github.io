@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;0,300;0,400;500;0,600;0,700;1,300;1,400;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
 
+}
 body {
+    
     background-color:#050606;
     color:#F5F5F5;
     font-family:Poppins, sans-serif;
-    
+    position:relative;
     
 }
+
 
 
 /**************************
@@ -19,6 +24,7 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function:linear;
 }
+
 @keyframes title {
     0%,50%, 100% { 
         font-weight:300;
@@ -35,13 +41,56 @@ body {
     }
     
 }
-
+h1 {
+    line-height:2em;
+}
 h1.special-title {
     font-size:2.5em;
     margin:0;
 }
+/*animation for about page */
+h4.special-title {
+    margin-top:0;
+    margin-bottom:0;
+
+    cursor:none;
+    animation-name:color;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+h4.special-title:hover {
+    cursor:none;
+}
+
+@keyframes color{
+    0%,50%,100%{
+        color:#F3B91C;
+    }
+    25% {
+        color:#EF3C40;
+    }
+    75%{
+        color:#0067A5;
+    }
+}
+h4.special-title:nth-child(2){
+    animation-delay:.1s;
+}
+h4.special-title:nth-child(3){
+    animation-delay:.2s;
+}
+h4.special-title:nth-child(4){
+    animation-delay:.3s;
+}
+h4.special-title:nth-child(5){
+    animation-delay:.4s;
+}
+
 h2 {
-    margin-bottom:2em;
+    line-height:2em;
+    
 }
 h3 {
     font-size:1.5em;
@@ -64,7 +113,7 @@ h6 {
     letter-spacing:.2em;
 }
 p {
-    line-height:1.5em;
+    line-height:1.75em;
 }
 a,
 a:visited  {
@@ -113,9 +162,49 @@ button:hover {
         transform:translateX(10px);
     }
 }
+
+/*STAMP*/
+.stamp {
+    z-index: 1;
+    
+}
+.stamp img {
+    width:120px;
+    height:auto;
+    animation:rollin 10s infinite linear;
+    position:absolute;
+    
+}
+.stamp-white {
+    top:20px;
+    right:25px;
+}
+.stamp-red {
+    top:25px;
+    right:28px;
+    color:#EF3C40;
+    opacity:30%;
+}
+.stamp-blue {
+    top:30px;
+    right:32px;
+    color:#0067A5;
+    opacity:30%;
+}
+@keyframes rollin {
+    0% {
+        transform:rotate(0deg);
+        transform-origin:center;
+    }
+    100% {
+      transform:rotate(-360deg);
+      transform-origin:center;
+    }
+}
 /**************************
 ********LAYOUT********
 **************************/
+
 .container {
     width:90%;
     margin:auto;
@@ -133,9 +222,11 @@ section:nth-child(3) {
     align-items: center;
     justify-content: center;
     text-align: center;
-
     
+
 }
+
+
 
 /* Footer */
 footer {
@@ -199,6 +290,7 @@ nav {
 nav ul {
     list-style-type:none;
     display:none;
+    padding-inline-start:0;
     
 }
 ul.main-menu {
@@ -233,11 +325,13 @@ nav ul a:focus {
 **************************/
 
 header {
+    
     height:100vh;
     
 }
 .heading {
-    height:90vh;
+    /*
+    height:70vh;*/
     display:grid;
     grid-template-columns:100%;
     
@@ -263,7 +357,7 @@ header {
 .heading-img {  
     background-image:url(../img/index/imgbanner.jpg);
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 40vh; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -335,24 +429,101 @@ button {
 }
 
 .contact-title {
-    background-image:url(../img/index/touch.png);
+    background-image:url(../img/index/letter.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     height:100%;
 }
 
-
+/*------------------------------------
+------------ABOUT PAGE----------------
+------------------------------------*/
+.heading-about {
+    display:flex;
+    flex-direction:column;    
+    text-align:center;
+}
+.heading-about h2,p {
+    margin-top:0;
+    margin-bottom:0;
+}
+/*image gallery*/
+.gallery-wrap {
+  display: none;
+}
+.intouch {
+    text-align:center;
+}
+/*------------------------------------
+------------CONTACT PAGE--------------
+------------------------------------*/
+.heading-contact {
+    margin-top:1.5em;
+    display:flex;
+    flex-direction:column;
+}
+form {
+    margin-top:2em;
+    
+    display:flex;
+    flex-direction: column;
+    width:80%;
+}
+form p {
+    margin-bottom:2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+textarea, 
+input {
+    width:90%;
+    background-color:#f5f5f528;
+    border:none;
+    border-bottom:solid 2px #F5F5F5;
+    color:#F3B91C;
+    padding:.3em;
+}
+textarea:focus, 
+input:focus {
+    border-bottom:solid 3px #EF3C40;
+    background-color: #050606;
+}
+input {
+    height:1.75em;
+}
+textarea {
+    height:10em;
+    resize: vertical;
+}
+form button {
+    width:7em;
+}
+.contact-img {
+    display:none;
+}
 /************************************
 ***************TABLET***************
 ************************************/
 
-@media (min-width:768px) {
+@media (min-width:768px)  {
     html, body {
         max-width:100%;
         overflow-x:hidden;
     }
+    .stamp {
+        z-index:1;
+    }
+    .stamp img {
+        width:200px;
+        top:70vh;
+    }
+    .stamp-white{
+        top:70vh;
+    }
+
     /*Navigation*/
     #logo {
         display:block;
@@ -414,7 +585,7 @@ button {
     .heading {
         grid-template-columns:repeat(6,1fr);
         grid-template-rows:80% 13% auto;
-        grid-gap:.5em;
+        
     }
     .heading-texts {
         grid-column:1/5;
@@ -425,6 +596,7 @@ button {
         grid-column:3/7;
         grid-row:1/3;
 
+        min-height: 80vh; 
         background-position: cover;
     }
   
@@ -438,6 +610,8 @@ button {
         margin-top:0;
         align-items: flex-end;
         justify-content:space-between;
+
+        margin-right:2em;
     }
   
     .scroll {
@@ -461,13 +635,17 @@ button {
         justify-content: space-between;
         align-items: center;
     }
-    
+    .col:nth-child(1) p {
+        margin-left:1.5em;
+        margin-right:1.5em;
+    }
     
     .col:nth-child(2){
         width:60%;
     }
     .col:nth-child(3) {
         width:30%;
+        
     }
 
     /*Sections*/
@@ -506,19 +684,119 @@ button {
         grid-column:2/3;
         width:10em;
     }
+    /*------------------------------------
+    ------------ABOUT PAGE----------------
+    ------------------------------------*/
+    .heading-about h2,p {
+        margin-top:.5em;
+        margin-bottom:.5em;
+    }
+   
+    .gallery-wrap {
+        margin-bottom:1.5em;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 30vh;
+    }
+      
+    .item {
+        flex: 1;
+        height:auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    
+    }
+    .item:hover{
+        flex: 7;
+    }
+    .item-1 { 
+        background-image: url('../img/about/1.jpg');
+    }
+    
+    .item-2 { 
+        background-image: url('../img/about/2.jpg');
+    }
+    
+    .item-3 { 
+        background-image: url('../img/about/3.jpg');
+    }
+    
+    .item-4 { 
+        background-image: url('../img/about/4.jpg');
+    }
+    
+    .item-5 { 
+        background-image: url('../img/about/5.jpg');
+    }
+
+    /*------------------------------------
+    ------------CONTACT PAGE--------------
+    ------------------------------------*/
+    .heading-contact {
+        margin-top:1.5em;
+    }
+    form {
+        margin-top:.5em;
+        height:auto;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+    form p{
+        margin-bottom:0;
+        margin-top:1.25em;
+    }
+    form p:nth-child(1) {
+        flex-basis:calc(35% - 4px);
+    }
+    form p:nth-child(2) {
+        flex-basis:calc(65% - 4px);
+    }
+    form p:nth-child(3) {
+        flex-basis:100%;
+    }
+    form p:nth-child(3) label {
+        width:100%;
+        display:flex;
+        flex-direction: column;
+    }
+    .contact-direct{
+        margin-top:2em;
+        margin-bottom:2em;
+        text-align:center;
+    }
     
 }
 /************************
 ********DESKTOP**********
 ************************/
-@media (min-width:1024px) and (max-width:2000px) {
+@media (min-width:960px)  {
 
     h1.special-title {
         font-size:5em;
     }
+    h4 {
+        font-size:1.5em;
+    }
     /*Layout*/
     .container {
-        width:70%;
+        width:80%;
+    }
+    .stamp img {
+        width:250px;
+        top:65vh;
+        
+    }
+    .stamp-white {
+        right:80px;
+    }
+    .stamp-red {
+        right:85px;
+    }
+    .stamp-blue {
+        right:90px;
     }
     /*Image cards*/
     .projects {
@@ -549,14 +827,50 @@ button {
     .heading-texts {
         grid-column:1/4;
     }
-    
+    /*Navigation*/
+    nav ul {
+        font-size:1.25em;
+    }
+    #logo {
+        width:5em;
+    }
     /*footer*/
     .col:nth-child(1) p {
         flex-basis:calc(45% - 4px);
+        margin-right:0;
+        margin-left:0;
     }
     /*Section*/
     #photo-contact {
         top:-50px;
     }
+    /*Image gallery*/
+    .gallery-wrap {
+        height:40vh;
+    }
+    /*Form*/
+    form p:nth-child(1) {
+        flex-basis:calc(40% - 4px);
+    }
+    form p:nth-child(2) {
+        flex-basis:calc(60% - 4px);
+    }
+    form p:nth-child(3) {
+        flex-basis:100%;
+        flex-direction:row;
+    }
+    
+    
 }
 
+@media (min-width: 1200px) {
+    .stamp-white {
+        right:160px;
+    }
+    .stamp-red {
+        right:165px;
+    }
+    .stamp-blue {
+        right:170px;
+    }
+}
