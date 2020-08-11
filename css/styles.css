@@ -355,7 +355,7 @@ header {
 }
 /* parallax banner image*/
 .heading-img {  
-    background-image:url(../img/index/imgbanner.jpg);
+    background-image:url('../img/index/imgbanner.jpg');
     /* Set a specific height */
     min-height: 40vh; 
 
@@ -445,7 +445,7 @@ button {
     flex-direction:column;    
     text-align:center;
 }
-.heading-about h2,p {
+.heading-about h5,h2,p {
     margin-top:0;
     margin-bottom:0;
 }
@@ -483,7 +483,7 @@ input {
     background-color:#f5f5f528;
     border:none;
     border-bottom:solid 2px #F5F5F5;
-    color:#F3B91C;
+    color:#F5F5F5;
     padding:.3em;
 }
 textarea:focus, 
@@ -492,10 +492,10 @@ input:focus {
     background-color: #050606;
 }
 input {
-    height:1.75em;
+    height:1em;
 }
 textarea {
-    height:10em;
+    height:8em;
     resize: vertical;
 }
 form button {
@@ -688,7 +688,6 @@ form button {
     ------------ABOUT PAGE----------------
     ------------------------------------*/
     .heading-about h2,p {
-        margin-top:.5em;
         margin-bottom:.5em;
     }
    
