@@ -355,7 +355,7 @@ header {
 }
 /* parallax banner image*/
 .heading-img {  
-    background-image:url('../img/index/imgbanner.jpg');
+    background-image: url('../img/index/imgbanner.jpg');
     /* Set a specific height */
     min-height: 40vh; 
 
@@ -484,7 +484,7 @@ input {
     border:none;
     border-bottom:solid 2px #F5F5F5;
     color:#F5F5F5;
-    padding:.3em;
+    padding:.5em;
 }
 textarea:focus, 
 input:focus {
@@ -536,37 +536,39 @@ form button {
     nav ul{
     display: flex;
     flex-wrap: wrap;
-    font-size:1.1em;
+    
     }
     
     nav ul li {
+        font-size:.75em;
         flex:1;
         margin-right:.25em;
     }
     nav ul li:last-child {
         margin-right:0;
     }
-    
+    nav ul a,
+    nav ul a:visited,
+    nav ul a:active {
+        padding:.5em 1em;
+    }
     /*Typography*/
 
     h1.special-title {
-        font-size:4em;
+        font-size:3.5em;
+        line-height:1em;
+        margin-bottom:.2em;
     }
-    h2 {
-        font-size:2em;
-    }
-    h3 {
-        font-size:1.8em;
-    }
+   
     p {
         line-height:2em;
-        font-size:1.3em;
+        font-size:1em;
     }
     h5 {
         font-size: 1.2em;
     }
     button {
-        font-size:1.4em;
+        font-size:1.2em;
     }
     
     /* BANNER header*/
@@ -638,6 +640,7 @@ form button {
     .col:nth-child(1) p {
         margin-left:1.5em;
         margin-right:1.5em;
+        
     }
     
     .col:nth-child(2){
@@ -736,7 +739,8 @@ form button {
     ------------CONTACT PAGE--------------
     ------------------------------------*/
     .heading-contact {
-        margin-top:1.5em;
+        justify-content:center;
+        align-items:center;
     }
     form {
         margin-top:.5em;
@@ -749,14 +753,19 @@ form button {
         margin-top:1.25em;
     }
     form p:nth-child(1) {
-        flex-basis:calc(35% - 4px);
+        flex-basis:40%;
+        flex-direction:row;
     }
     form p:nth-child(2) {
-        flex-basis:calc(65% - 4px);
+        flex-basis:55%;
+        flex-direction:row;
     }
     form p:nth-child(3) {
         flex-basis:100%;
+        flex-direction:row;
     }
+    form p:nth-child(1) label,
+    form p:nth-child(2) label,
     form p:nth-child(3) label {
         width:100%;
         display:flex;
@@ -832,7 +841,7 @@ form button {
         font-size:1.25em;
     }
     #logo {
-        width:5em;
+        width:4em;
     }
     /*footer*/
     .col:nth-child(1) p {
@@ -849,16 +858,7 @@ form button {
         height:40vh;
     }
     /*Form*/
-    form p:nth-child(1) {
-        flex-basis:calc(40% - 4px);
-    }
-    form p:nth-child(2) {
-        flex-basis:calc(60% - 4px);
-    }
-    form p:nth-child(3) {
-        flex-basis:100%;
-        flex-direction:row;
-    }
+  
     
     
 }
