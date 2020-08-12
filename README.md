@@ -8,3 +8,5 @@
 4. I got really depressed after I look up preferences, I realized I can't make my website as good as them
 
 5. Image gallery: https://codepen.io/stefcharle/pen/Gydvbx 
+
+6. I tried to make the form in contact page active by following this link (https://qhmit.com/html/codes/html_form_to_email.cfm) but it doesn't work. I have no knowledge on .php yet so just leave it there showcase for now.
