@@ -599,7 +599,7 @@ form button {
         grid-row:1/3;
 
         min-height: 80vh; 
-        background-position: cover;
+        background-size: cover;
     }
   
     .heading-texts {
