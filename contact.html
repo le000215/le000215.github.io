@@ -1,132 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
-    <link rel="icon" type="image" href="img/favicon.png">
-    <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+        <link rel="icon" href="img/favicon.png">
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        
+        <title>Ly Le's Virtual Portfolio</title>
+    </head>
+    <body>
     
-    <title>Ly Le's Virtual Portfolio</title>
-</head>
-<body>
-  
-    <div class="container">
-        <header>
-            <!-- Navigation -->
+        <div class="container">
+            <header>
+                <!-- Navigation -->
+                
+                <div class="brand">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="logo" id="logo">
+                    </a>
+                    <nav>
+                        <label>
+                            <span class="hmic">
+                            <i class="im im-menu"></i>
+                            </span>
+                            <input type="checkbox" class="menu-trigger">
+                            
+                            <ul class="main-menu">
+                                <li><a href="index.html#works">Works</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="https://www.behance.net/lehluuly">Behance</a></li>
+                            </ul>
+                        </label>
+                    </nav>
+                </div>
             
-            <div class="brand">
-                <a href="index.html">
-                    <img src="img/logo.svg" alt="logo" id="logo">
-                </a>
-                <nav>
-                    <label>
-                        <span class="hmic">
-                           <i class="im im-menu"></i>
-                        </span>
-                        <input type="checkbox" class="menu-trigger">
+                <div class="heading-contact">
+                    
+                    <h5>GET IN TOUCH</h5>
+                    
+                    <p>Got any new ideas or project? Drop me a line if you want to work together. Big or small. Exciting or Super exciting.</p>
                         
-                        <ul class="main-menu">
-                            <li><a href="index.html#works">Works</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="https://www.behance.net/lehluuly">Behance</a></li>
+                    
+                    <!--The php file doesn't work out for me so the form here are only for showcase-->
+                    <!--
+                    <form method="post" action="send_mail.php">
+                        <p>
+                            <label>Your Name
+                            <input type="text" name="first_name" required>
+                            </label> 
+                        </p>
+                        <p>
+                            <label>Email 
+                            <input type="email" name="email_address">
+                            </label>
+                        </p>
+                        <p>
+                            <label>Message
+                            <textarea name="comments" maxlength="500"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <button>SUBMIT</button>
+                        </p>
+                    </form>
+                    -->
+                    <!-- For now this section stays here. If I wanna use this version of my web, I will have to move this section up as priority-->
+                    <div class="contact-direct">
+                        <a href="mailto:lehluuly@gmail.com" target=”_blank”><h4 class="special-title">CONTACT ME DIRECTLY: LEHLUULY@GMAIL.COM</h4></a>
+                        <p>(This will open a new email tab on your browser)</p>
+                    </div>
+                </div>
+                
+            </header>
+            
+            
+            <footer>
+                <div class="row">
+                    <div class="col">
+                        <h3>Contact information</h3>
+                        <p>Feel free to reach out to me anytime. I prefer to talk over email, especially since we maybe a few time zones away.</p>
+                        <ul>
+                            <li>E: <a class="special" href="mailto:lehluuly@gmail.com">lehluuly@gmail.com</a></li>
+                            <li>P: <a class="special" href="tel:6135813768">+1 613 581 3768</a></li>
                         </ul>
-                    </label>
-                </nav>
-            </div>
-           
-            <div class="heading-contact">
+                    </div>
+                    <div class="col">
+                        <h3>Availibility</h3>
+                        <p>I usually work on several projects but I’ll be happy to discuss new opportunities. Let’s get in touch</p>
+                    </div>
+                    <div class="col">
+                        <h3>Follow me on</h3>
+                        <ul class="social-links">
+                            <li><a class="special" href="https://www.instagram.com/delilahle/">Instagram</a></li>
+                            <li><a class="special" href="https://www.behance.net/lehluuly">Behance</a></li>
+                            <li><a class="special" href="https://www.linkedin.com/in/lehluuly/">Linkedin</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <h6>&copy; Huy Luu Ly Le, 2020 </h6>
                 
-                <h5>GET IN TOUCH</h5>
                 
-                <p>Got any new ideas or project? Drop me a line if you want to work together. Big or small. Exciting or Super exciting.</p>
-                     
+                <a href="#" class="go-top"><i class="im im-angle-up"></i></a>
                 
-                <!--The php file doesn't work out for me so the form here are only for showcase-->
+            </footer>
 
-                <form method="post" action="send_mail.php">
-                    <p>
-                        <label>Your Name
-                        <input type="text" name="first_name" required>
-                        </label> 
-                    </p>
-                    <p>
-                        <label>Email 
-                        <input type="email" name="email_address">
-                        </label>
-                    </p>
-                    <p>
-                        <label>Message
-                        <textarea name="comments" maxlength="500"></textarea>
-                        </label>
-                    </p>
-                    <p>
-                        <button>SUBMIT</button>
-                    </p>
-                </form>
-                <!-- For now this section stays here. If I wanna use this version of my web, I will have to move this section up as priority-->
-                <div class="contact-direct">
-                    <a href="mailto:lehluuly@gmail.com" target=”_blank”><h4 class="special-title">OR EMAIL ME DIRECTLY: LEHLUULY@GMAIL.COM</h4></a>
-                    <p>(This will open a new tab on your browser)</p>
-                </div>
-            </div>
-               
-        </header>
-        
-        
-        <footer>
-            <div class="row">
-                <div class="col">
-                    <h3>Contact information</h3>
-                    <p>Feel free to reach out to me anytime. I prefer to talk over email, especially since we maybe a few time zones away.</p>
-                    <ul>
-                        <li>E: <a class="special" href="mailto:lehluuly@gmail.com">lehluuly@gmail.com</a></li>
-                        <li>P: <a class="special" href="tel:6135813768">+1 613 581 3768</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <h3>Availibility</h3>
-                    <p>I usually work on several projects but I’ll be happy to discuss new opportunities. Let’s get in touch</p>
-                </div>
-                <div class="col">
-                    <h3>Follow me on</h3>
-                    <ul class="social-links">
-                        <li><a class="special" href="https://www.instagram.com/delilahle/">Instagram</a></li>
-                        <li><a class="special" href="https://www.behance.net/lehluuly">Behance</a></li>
-                        <li><a class="special" href="https://www.linkedin.com/in/lehluuly/">Linkedin</a></li>
-                    </ul>
-                </div>
-            </div>
-            <h6>&copy; Huy Luu Ly Le, 2020 </h5>
-            
-            
-            <a href="#" class="go-top"><i class="im im-angle-up"></i></a>
-            
-        </footer>
-
-    </div>
-   
+        </div>
     
-    <!--Floating stamp-->
-    <div class="stamp">
         
-        <img src="img/stamp-blue.svg" class="stamp-blue" alt="graphic design, ux/ui, videomaking, photography">
-        <img src="img/stamp-red.svg" class="stamp-red" alt="graphic design, ux/ui, videomaking, photography">
-        <img src="img/stamp.svg" class="stamp-white" alt="graphic design, ux/ui, videomaking, photography">
+        <!--Floating stamp-->
+        <div class="stamp">
+            
+            <img src="img/stamp-blue.svg" class="stamp-blue" alt="graphic design, ux/ui, videomaking, photography">
+            <img src="img/stamp-red.svg" class="stamp-red" alt="graphic design, ux/ui, videomaking, photography">
+            <img src="img/stamp.svg" class="stamp-white" alt="graphic design, ux/ui, videomaking, photography">
+            
+        </div>
+
+
+
+
+
+
         
-    </div>
-
-
-
-
-
-
-    
-</body>
+    </body>
 </html>

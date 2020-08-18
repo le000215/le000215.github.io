@@ -138,6 +138,7 @@ button {
 
 button:hover {
     border-bottom:solid 5px #0067A5;
+    color:#EF3C40;
     font-weight:600;
     transition: .2s;
     
@@ -288,11 +289,11 @@ nav {
 nav ul {
     list-style-type:none;
     display:none;
-    padding-inline-start:0;
+    padding-inline-start: 1em;
     
 }
 ul.main-menu {
-    padding-left:none;
+    padding-left:0;
 }
 
 .menu-trigger {
@@ -411,8 +412,21 @@ button {
     position:absolute;
     top:20px;
     left:40px;
-
     color:#F5F5F5;
+    padding-right:.5em;
+}
+.caption h5 {
+    margin-top:.3em;
+    letter-spacing: .1em;
+    opacity: 70%;
+}
+.caption h3 {
+    margin-top:0;
+    margin-bottom:0;
+}
+.caption p {
+    opacity: 80%;
+    font-weight:100;
 }
 .projects {
     margin-bottom:3em;
@@ -720,8 +734,8 @@ form button {
         height:auto;
         background-position: center;
         background-size: cover;
-        background-repeat: none;
         transition: flex 0.8s ease;
+        background-repeat:no-repeat;
     
     }
     .item:hover{
