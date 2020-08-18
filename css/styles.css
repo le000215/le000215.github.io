@@ -399,7 +399,7 @@ button {
     
 } 
 .card a:hover {
-    cursor: url('../img/hover.gif'), pointer;
+    cursor: pointer;
 
 }
 
