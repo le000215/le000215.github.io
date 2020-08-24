@@ -1044,6 +1044,11 @@ input[type=checkbox]{
     #truck{
         width:500px;
     }
+    #contact-page {
+        grid-template-columns:auto auto;
+        justify-items:center;
+        align-items:center;
+    }
     .wheels img:nth-child(1) {
         margin-right:140px;
         
